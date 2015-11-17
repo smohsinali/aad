@@ -29,4 +29,6 @@ class CSP:
                         self.formula.append(self.clauses)
                         self.clauses = dict()
 
+if __name__ == "__main__":
+    print("Please run 'python3 main.py <filename>'")
 

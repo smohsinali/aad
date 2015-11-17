@@ -1,0 +1,18 @@
+Question1:
+- It took about 4 hours, time was mostly spent on deciding what data structures to use and then implementing them.
+- Got lot of insights on how to programme SAT problems
+- I think question was perfect.
+
+Question2:
+- It took about 6 hours, some time was spent on tuning. Like for example WalkSat was not working very good if I updated number of satisfiable clauses,
+instead it worked way better if I put a threshold and used it.
+- Programming SAT solvers and fine tuning them
+- not really
+
+Question3:
+- It took about 3 hours and I hardly finished it half way through.
+- Problem I had with this Question was that since while doing first question I didnt know about details of this question,
+the data structures I implemented before couldnt be used in this. for example my dictionaries for literal values only supported true of false.
+ So doing this question required me to alter all those datastructures and I thought ten points were too few to do it.
+- I think this sheet should have had a specification list for datastructures, which could support both SAT and CSP problems
+ (SAT literals had only boolean values while CSP literals had integer domains)
