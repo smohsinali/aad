@@ -1,0 +1,23 @@
+question1:
+-about 3 hours
+-i didnt had experience with numpy so it was good intro exercise for that
+-i think exercise in implementing neural network would have been more fun
+-compared to one of my friend im getting very good scores (in range 0.85-0.96) so im in bit of doubt if there might be some problem in my implementation. if rough result for one of dataset was provided then i could be sure.
+
+
+question2:
+-about 3 hours (time was mostly spent in waiting for results and making small changes to get them in right format)
+-i learned how frustating can it be to tune params especially if size of datasets start growing
+-it was nice exercise, i wouldnt change anything
+
+question3:
+-about 3 hours
+-all time was spent in downloading, starting and running vm
+-i didnt fully understand the output of classifier.show_models() so i cant say i learned much
+-i also wonder if one hour was enough for autosklearn. apparently results i got in it (0.52 and 0.48) are worse than ones i get with simple knn
+
+question4:
+-about 2 hours
+-very open ended
+-i liked the question but in the end lacked the time to properly do it
+	

@@ -1,0 +1,442 @@
+/home/alis/scikit/bin/python /home/alis/Desktop/aad/exercises/ex4/main.py
+ex:4
+Syed Mohsin Ali
+
+
+set: set1
+
+Preprocessing =  MinMax
+
+Distance Metric =  Euclidean
+k = 1 : avg. score = 0.854652014652
+k = 2 : avg. score = 0.863516483516
+k = 3 : avg. score = 0.867948717949
+k = 4 : avg. score = 0.867985347985
+k = 5 : avg. score = 0.863540903541
+k = 6 : avg. score = 0.865738705739
+k = 7 : avg. score = 0.866837606838
+k = 8 : avg. score = 0.865750915751
+k = 9 : avg. score = 0.866825396825
+k = 10 : avg. score = 0.866862026862
+k = 11 : avg. score = 0.86684981685
+k = 12 : avg. score = 0.867960927961
+k = 13 : avg. score = 0.867948717949
+k = 14 : avg. score = 0.871294261294
+k = 15 : avg. score = 0.865726495726
+k = 16 : avg. score = 0.873492063492
+k = 17 : avg. score = 0.867948717949
+k = 18 : avg. score = 0.865726495726
+k = 19 : avg. score = 0.865726495726
+k = 20 : avg. score = 0.866837606838
+k = 21 : avg. score = 0.863492063492
+k = 22 : avg. score = 0.86126984127
+k = 23 : avg. score = 0.859047619048
+k = 24 : avg. score = 0.859047619048
+k = 25 : avg. score = 0.860158730159
+k = 26 : avg. score = 0.863492063492
+k = 27 : avg. score = 0.863492063492
+k = 28 : avg. score = 0.86347985348
+k = 29 : avg. score = 0.863492063492
+k = 30 : avg. score = 0.863492063492
+k = 31 : avg. score = 0.865714285714
+k = 32 : avg. score = 0.862405372405
+k = 33 : avg. score = 0.861282051282
+
+Distance Metric =  Manhattan
+k = 1 : avg. score = 0.845763125763
+k = 2 : avg. score = 0.839084249084
+k = 3 : avg. score = 0.857924297924
+k = 4 : avg. score = 0.844652014652
+k = 5 : avg. score = 0.84905982906
+k = 6 : avg. score = 0.845738705739
+k = 7 : avg. score = 0.85463980464
+k = 8 : avg. score = 0.852417582418
+k = 9 : avg. score = 0.855738705739
+k = 10 : avg. score = 0.847985347985
+k = 11 : avg. score = 0.851306471306
+k = 12 : avg. score = 0.853540903541
+k = 13 : avg. score = 0.854615384615
+k = 14 : avg. score = 0.846862026862
+k = 15 : avg. score = 0.849047619048
+k = 16 : avg. score = 0.854627594628
+k = 17 : avg. score = 0.855702075702
+k = 18 : avg. score = 0.855726495726
+k = 19 : avg. score = 0.849047619048
+k = 20 : avg. score = 0.850158730159
+k = 21 : avg. score = 0.853492063492
+k = 22 : avg. score = 0.844627594628
+k = 23 : avg. score = 0.842393162393
+k = 24 : avg. score = 0.844627594628
+k = 25 : avg. score = 0.842405372405
+k = 26 : avg. score = 0.844627594628
+k = 27 : avg. score = 0.843504273504
+k = 28 : avg. score = 0.843504273504
+k = 29 : avg. score = 0.843492063492
+k = 30 : avg. score = 0.844615384615
+k = 31 : avg. score = 0.845714285714
+k = 32 : avg. score = 0.846825396825
+k = 33 : avg. score = 0.843492063492
+
+Preprocessing =  Scalar
+
+Distance Metric =  Euclidean
+k = 1 : avg. score = 0.917851037851
+k = 2 : avg. score = 0.909035409035
+k = 3 : avg. score = 0.943455433455
+k = 4 : avg. score = 0.929072039072
+k = 5 : avg. score = 0.931257631258
+k = 6 : avg. score = 0.926800976801
+k = 7 : avg. score = 0.933443223443
+k = 8 : avg. score = 0.924566544567
+k = 9 : avg. score = 0.930097680098
+k = 10 : avg. score = 0.925665445665
+k = 11 : avg. score = 0.931208791209
+k = 12 : avg. score = 0.924554334554
+k = 13 : avg. score = 0.930097680098
+k = 14 : avg. score = 0.924554334554
+k = 15 : avg. score = 0.926764346764
+k = 16 : avg. score = 0.923443223443
+k = 17 : avg. score = 0.930097680098
+k = 18 : avg. score = 0.926776556777
+k = 19 : avg. score = 0.925653235653
+k = 20 : avg. score = 0.926776556777
+k = 21 : avg. score = 0.924554334554
+k = 22 : avg. score = 0.923443223443
+k = 23 : avg. score = 0.924542124542
+k = 24 : avg. score = 0.924542124542
+k = 25 : avg. score = 0.921208791209
+k = 26 : avg. score = 0.921208791209
+k = 27 : avg. score = 0.921208791209
+k = 28 : avg. score = 0.918986568987
+k = 29 : avg. score = 0.916764346764
+k = 30 : avg. score = 0.914542124542
+k = 31 : avg. score = 0.91231990232
+k = 32 : avg. score = 0.91231990232
+k = 33 : avg. score = 0.91231990232
+
+Distance Metric =  Manhattan
+k = 1 : avg. score = 0.923406593407
+k = 2 : avg. score = 0.904578754579
+k = 3 : avg. score = 0.932344322344
+k = 4 : avg. score = 0.930122100122
+k = 5 : avg. score = 0.935677655678
+k = 6 : avg. score = 0.926813186813
+k = 7 : avg. score = 0.931221001221
+k = 8 : avg. score = 0.926776556777
+k = 9 : avg. score = 0.925677655678
+k = 10 : avg. score = 0.923443223443
+k = 11 : avg. score = 0.926764346764
+k = 12 : avg. score = 0.924542124542
+k = 13 : avg. score = 0.924542124542
+k = 14 : avg. score = 0.922344322344
+k = 15 : avg. score = 0.92010989011
+k = 16 : avg. score = 0.916776556777
+k = 17 : avg. score = 0.915665445665
+k = 18 : avg. score = 0.915665445665
+k = 19 : avg. score = 0.911221001221
+k = 20 : avg. score = 0.915665445665
+k = 21 : avg. score = 0.91010989011
+k = 22 : avg. score = 0.91010989011
+k = 23 : avg. score = 0.911221001221
+k = 24 : avg. score = 0.904554334554
+k = 25 : avg. score = 0.905665445665
+k = 26 : avg. score = 0.908998778999
+k = 27 : avg. score = 0.911221001221
+k = 28 : avg. score = 0.906776556777
+k = 29 : avg. score = 0.91010989011
+k = 30 : avg. score = 0.911221001221
+k = 31 : avg. score = 0.914554334554
+k = 32 : avg. score = 0.913443223443
+k = 33 : avg. score = 0.91010989011
+
+Preprocessing =  None
+
+Distance Metric =  Euclidean
+k = 1 : avg. score = 0.920073260073
+k = 2 : avg. score = 0.910146520147
+k = 3 : avg. score = 0.939010989011
+k = 4 : avg. score = 0.929023199023
+k = 5 : avg. score = 0.926800976801
+k = 6 : avg. score = 0.924578754579
+k = 7 : avg. score = 0.926800976801
+k = 8 : avg. score = 0.926788766789
+k = 9 : avg. score = 0.925677655678
+k = 10 : avg. score = 0.927887667888
+k = 11 : avg. score = 0.926764346764
+k = 12 : avg. score = 0.921221001221
+k = 13 : avg. score = 0.924554334554
+k = 14 : avg. score = 0.926776556777
+k = 15 : avg. score = 0.928986568987
+k = 16 : avg. score = 0.926764346764
+k = 17 : avg. score = 0.926764346764
+k = 18 : avg. score = 0.926764346764
+k = 19 : avg. score = 0.926764346764
+k = 20 : avg. score = 0.923443223443
+k = 21 : avg. score = 0.923443223443
+k = 22 : avg. score = 0.921221001221
+k = 23 : avg. score = 0.924542124542
+k = 24 : avg. score = 0.923431013431
+k = 25 : avg. score = 0.923431013431
+k = 26 : avg. score = 0.921208791209
+k = 27 : avg. score = 0.915653235653
+k = 28 : avg. score = 0.91231990232
+k = 29 : avg. score = 0.91231990232
+k = 30 : avg. score = 0.910097680098
+k = 31 : avg. score = 0.911221001221
+k = 32 : avg. score = 0.913431013431
+k = 33 : avg. score = 0.912332112332
+
+Distance Metric =  Manhattan
+k = 1 : avg. score = 0.921184371184
+k = 2 : avg. score = 0.90568986569
+k = 3 : avg. score = 0.933443223443
+k = 4 : avg. score = 0.925677655678
+k = 5 : avg. score = 0.926788766789
+k = 6 : avg. score = 0.922368742369
+k = 7 : avg. score = 0.927887667888
+k = 8 : avg. score = 0.926776556777
+k = 9 : avg. score = 0.926776556777
+k = 10 : avg. score = 0.921221001221
+k = 11 : avg. score = 0.922332112332
+k = 12 : avg. score = 0.921221001221
+k = 13 : avg. score = 0.923443223443
+k = 14 : avg. score = 0.921221001221
+k = 15 : avg. score = 0.918998778999
+k = 16 : avg. score = 0.9178998779
+k = 17 : avg. score = 0.915665445665
+k = 18 : avg. score = 0.912332112332
+k = 19 : avg. score = 0.91010989011
+k = 20 : avg. score = 0.91010989011
+k = 21 : avg. score = 0.91010989011
+k = 22 : avg. score = 0.91010989011
+k = 23 : avg. score = 0.908998778999
+k = 24 : avg. score = 0.906776556777
+k = 25 : avg. score = 0.902332112332
+k = 26 : avg. score = 0.906776556777
+k = 27 : avg. score = 0.911221001221
+k = 28 : avg. score = 0.906776556777
+k = 29 : avg. score = 0.905665445665
+k = 30 : avg. score = 0.91010989011
+k = 31 : avg. score = 0.908998778999
+k = 32 : avg. score = 0.91010989011
+k = 33 : avg. score = 0.907887667888
+
+set: set2
+
+Preprocessing =  MinMax
+
+Distance Metric =  Euclidean
+k = 1 : avg. score = 0.931691221608
+k = 2 : avg. score = 0.931688152241
+k = 3 : avg. score = 0.941129527317
+k = 4 : avg. score = 0.945570902394
+k = 5 : avg. score = 0.950564763659
+k = 6 : avg. score = 0.950567833026
+k = 7 : avg. score = 0.947237569061
+k = 8 : avg. score = 0.947790055249
+k = 9 : avg. score = 0.94890116636
+k = 10 : avg. score = 0.951678944138
+k = 11 : avg. score = 0.949459791283
+k = 12 : avg. score = 0.950561694291
+k = 13 : avg. score = 0.95167587477
+k = 14 : avg. score = 0.94890116636
+k = 15 : avg. score = 0.947786985881
+k = 16 : avg. score = 0.947783916513
+k = 17 : avg. score = 0.950561694291
+k = 18 : avg. score = 0.948898096992
+k = 19 : avg. score = 0.950012277471
+k = 20 : avg. score = 0.951123388582
+k = 21 : avg. score = 0.952234499693
+k = 22 : avg. score = 0.950012277471
+k = 23 : avg. score = 0.950009208103
+k = 24 : avg. score = 0.950012277471
+k = 25 : avg. score = 0.948345610804
+k = 26 : avg. score = 0.948895027624
+k = 27 : avg. score = 0.946123388582
+k = 28 : avg. score = 0.946678944138
+k = 29 : avg. score = 0.948345610804
+k = 30 : avg. score = 0.947790055249
+k = 31 : avg. score = 0.949456721915
+k = 32 : avg. score = 0.947793124616
+k = 33 : avg. score = 0.948345610804
+
+Distance Metric =  Manhattan
+k = 1 : avg. score = 0.922246777164
+k = 2 : avg. score = 0.919465930018
+k = 3 : avg. score = 0.941129527317
+k = 4 : avg. score = 0.94057704113
+k = 5 : avg. score = 0.943895027624
+k = 6 : avg. score = 0.94667587477
+k = 7 : avg. score = 0.946678944138
+k = 8 : avg. score = 0.946682013505
+k = 9 : avg. score = 0.942793124616
+k = 10 : avg. score = 0.947234499693
+k = 11 : avg. score = 0.944459791283
+k = 12 : avg. score = 0.942790055249
+k = 13 : avg. score = 0.944456721915
+k = 14 : avg. score = 0.942796193984
+k = 15 : avg. score = 0.943904235727
+k = 16 : avg. score = 0.942237569061
+k = 17 : avg. score = 0.945570902394
+k = 18 : avg. score = 0.945015346839
+k = 19 : avg. score = 0.942793124616
+k = 20 : avg. score = 0.941685082873
+k = 21 : avg. score = 0.941129527317
+k = 22 : avg. score = 0.940573971762
+k = 23 : avg. score = 0.941682013505
+k = 24 : avg. score = 0.943348680172
+k = 25 : avg. score = 0.94112645795
+k = 26 : avg. score = 0.942793124616
+k = 27 : avg. score = 0.941682013505
+k = 28 : avg. score = 0.942793124616
+k = 29 : avg. score = 0.940015346839
+k = 30 : avg. score = 0.939459791283
+k = 31 : avg. score = 0.940570902394
+k = 32 : avg. score = 0.938348680172
+k = 33 : avg. score = 0.938348680172
+
+Preprocessing =  Scalar
+
+Distance Metric =  Euclidean
+k = 1 : avg. score = 0.956685082873
+k = 2 : avg. score = 0.948910374463
+k = 3 : avg. score = 0.963348680172
+k = 4 : avg. score = 0.963354818907
+k = 5 : avg. score = 0.96612645795
+k = 6 : avg. score = 0.964456721915
+k = 7 : avg. score = 0.966678944138
+k = 8 : avg. score = 0.965015346839
+k = 9 : avg. score = 0.966123388582
+k = 10 : avg. score = 0.965570902394
+k = 11 : avg. score = 0.96667587477
+k = 12 : avg. score = 0.966120319214
+k = 13 : avg. score = 0.965561694291
+k = 14 : avg. score = 0.966117249847
+k = 15 : avg. score = 0.966672805402
+k = 16 : avg. score = 0.965564763659
+k = 17 : avg. score = 0.965567833026
+k = 18 : avg. score = 0.965012277471
+k = 19 : avg. score = 0.966123388582
+k = 20 : avg. score = 0.962237569061
+k = 21 : avg. score = 0.965012277471
+k = 22 : avg. score = 0.96390116636
+k = 23 : avg. score = 0.96667587477
+k = 24 : avg. score = 0.963345610804
+k = 25 : avg. score = 0.96390116636
+k = 26 : avg. score = 0.96390116636
+k = 27 : avg. score = 0.965564763659
+k = 28 : avg. score = 0.961682013505
+k = 29 : avg. score = 0.965009208103
+k = 30 : avg. score = 0.963345610804
+k = 31 : avg. score = 0.963898096992
+k = 32 : avg. score = 0.962786985881
+k = 33 : avg. score = 0.964453652548
+
+Distance Metric =  Manhattan
+k = 1 : avg. score = 0.954462860651
+k = 2 : avg. score = 0.950018416206
+k = 3 : avg. score = 0.961685082873
+k = 4 : avg. score = 0.961132596685
+k = 5 : avg. score = 0.967237569061
+k = 6 : avg. score = 0.96335174954
+k = 7 : avg. score = 0.965567833026
+k = 8 : avg. score = 0.964462860651
+k = 9 : avg. score = 0.967237569061
+k = 10 : avg. score = 0.965564763659
+k = 11 : avg. score = 0.967228360958
+k = 12 : avg. score = 0.965006138735
+k = 13 : avg. score = 0.967228360958
+k = 14 : avg. score = 0.965009208103
+k = 15 : avg. score = 0.965564763659
+k = 16 : avg. score = 0.963898096992
+k = 17 : avg. score = 0.964456721915
+k = 18 : avg. score = 0.963348680172
+k = 19 : avg. score = 0.96335174954
+k = 20 : avg. score = 0.965567833026
+k = 21 : avg. score = 0.963904235727
+k = 22 : avg. score = 0.963904235727
+k = 23 : avg. score = 0.963348680172
+k = 24 : avg. score = 0.963348680172
+k = 25 : avg. score = 0.965567833026
+k = 26 : avg. score = 0.962790055249
+k = 27 : avg. score = 0.963345610804
+k = 28 : avg. score = 0.960567833026
+k = 29 : avg. score = 0.961123388582
+k = 30 : avg. score = 0.95835174954
+k = 31 : avg. score = 0.961682013505
+k = 32 : avg. score = 0.959459791283
+k = 33 : avg. score = 0.961682013505
+
+Preprocessing =  None
+
+Distance Metric =  Euclidean
+k = 1 : avg. score = 0.955015346839
+k = 2 : avg. score = 0.950570902394
+k = 3 : avg. score = 0.962783916513
+k = 4 : avg. score = 0.961129527317
+k = 5 : avg. score = 0.963354818907
+k = 6 : avg. score = 0.963354818907
+k = 7 : avg. score = 0.966132596685
+k = 8 : avg. score = 0.962237569061
+k = 9 : avg. score = 0.965567833026
+k = 10 : avg. score = 0.964459791283
+k = 11 : avg. score = 0.964456721915
+k = 12 : avg. score = 0.96390116636
+k = 13 : avg. score = 0.964453652548
+k = 14 : avg. score = 0.965009208103
+k = 15 : avg. score = 0.964453652548
+k = 16 : avg. score = 0.963345610804
+k = 17 : avg. score = 0.962237569061
+k = 18 : avg. score = 0.961682013505
+k = 19 : avg. score = 0.962237569061
+k = 20 : avg. score = 0.963345610804
+k = 21 : avg. score = 0.962231430325
+k = 22 : avg. score = 0.962231430325
+k = 23 : avg. score = 0.96445058318
+k = 24 : avg. score = 0.963345610804
+k = 25 : avg. score = 0.964453652548
+k = 26 : avg. score = 0.963898096992
+k = 27 : avg. score = 0.965006138735
+k = 28 : avg. score = 0.965006138735
+k = 29 : avg. score = 0.965006138735
+k = 30 : avg. score = 0.96445058318
+k = 31 : avg. score = 0.963895027624
+k = 32 : avg. score = 0.963339472069
+k = 33 : avg. score = 0.96445058318
+
+Distance Metric =  Manhattan
+k = 1 : avg. score = 0.953354818907
+k = 2 : avg. score = 0.946685082873
+k = 3 : avg. score = 0.961129527317
+k = 4 : avg. score = 0.959462860651
+k = 5 : avg. score = 0.963910374463
+k = 6 : avg. score = 0.961138735421
+k = 7 : avg. score = 0.963907305095
+k = 8 : avg. score = 0.961132596685
+k = 9 : avg. score = 0.964456721915
+k = 10 : avg. score = 0.963904235727
+k = 11 : avg. score = 0.965570902394
+k = 12 : avg. score = 0.963898096992
+k = 13 : avg. score = 0.966672805402
+k = 14 : avg. score = 0.96445058318
+k = 15 : avg. score = 0.963345610804
+k = 16 : avg. score = 0.962793124616
+k = 17 : avg. score = 0.962793124616
+k = 18 : avg. score = 0.962240638428
+k = 19 : avg. score = 0.962796193984
+k = 20 : avg. score = 0.96335174954
+k = 21 : avg. score = 0.964459791283
+k = 22 : avg. score = 0.965009208103
+k = 23 : avg. score = 0.964456721915
+k = 24 : avg. score = 0.965012277471
+k = 25 : avg. score = 0.96390116636
+k = 26 : avg. score = 0.963348680172
+k = 27 : avg. score = 0.965567833026
+k = 28 : avg. score = 0.963348680172
+k = 29 : avg. score = 0.964456721915
+k = 30 : avg. score = 0.963342541436
+k = 31 : avg. score = 0.963345610804
+k = 32 : avg. score = 0.962231430325
+k = 33 : avg. score = 0.963342541436
+
+Process finished with exit code 0
