@@ -37,7 +37,7 @@ class CNF:
                     self.total_variables = int(line.split()[2])
                     self.total_clauses = int(line.split()[3])
             for i in range(1, self.total_variables + 1):
-                self.variable_values[i] = True
+                self.variable_values[i] = random.choice((True, False))
                 self.clauses_satus = [None] * self.total_clauses
 
     # Check if formula is satisfiable with current value of variables.

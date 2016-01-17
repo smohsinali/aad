@@ -1,7 +1,7 @@
 import sys
 import re
 import random
-
+import time
 __author__ = 'alis'
 
 
@@ -33,13 +33,15 @@ class Solver:
         steps = 0
         tabu_list = dict()
         satisfiable = False
+        start_time = time.clock()
         variable = None
+        time_taken = 0
         for i in cnf.variable_values:
             tabu_list[i] = 0
         if cnf.evaluate_formula() is True:
             return True
         else:
-            while satisfiable is False and steps < max_steps:
+            while satisfiable is False and time_taken < 5:
                 variable, tabu_list = self.find_random_best_variable(cnf, tabu_list, tabuLength)
                 cnf.flip_variable_values([variable])
                 satisfiable = cnf.evaluate_formula()
@@ -47,6 +49,7 @@ class Solver:
                         print("# of Steps:", steps)
                         return True
                 steps += 1
+                time_taken = time.clock() - start_time
         print("# of Steps:", steps)
         return False
 
@@ -58,12 +61,14 @@ class Solver:
         steps = 0
         satisfiable_clauses = cnf.num_satisfied_clauses
         satisfiable = False
+        start_time = time.clock()
+        time_taken = 0
         if cnf.evaluate_formula() is True:
-            print "# of Steps:", steps
+            print("# of Steps:", steps)
             return True
         else:
             # print("satis", cnf.satisfiable)
-            while satisfiable is False and steps < max_steps:
+            while satisfiable is False and time_taken < 5:
                 clause = self.find_random_false_clause(cnf)
                 if clause == {}:
                     # print("empty clause")
@@ -82,6 +87,7 @@ class Solver:
                         print("# of Steps:", steps)
                         return True
                 steps += 1
+                time_taken = time.clock() - start_time
         print("# of Steps:", steps)
         return False
 

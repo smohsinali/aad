@@ -41,7 +41,7 @@ if __name__ == "__main__":
     # distMethod = ["Euclidean"]
 
     print
-    sets = ["set2"]
+    sets = ["set1", "set2"]
 
     # looping over all possible configs
     for set in sets:
