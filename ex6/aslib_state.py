@@ -38,11 +38,20 @@ if __name__ == "__main__":
 
     oracle_time = np.zeros(num_instances)
     oracle_time = np.amin(runtime_matrix, axis=1)
+    ot = np.average(oracle_time)
+
     seq_time = np.zeros(num_instances)
     seq_time = np.amin(runtime_matrix, axis=1) * num_algos
     np.clip(seq_time, 0, 50000, seq_time)
-
-    ot = np.average(oracle_time)
     st = np.average(seq_time)
+
+    single_best = np.zeros(num_algos)
+    single_best = np.average(runtime_matrix, axis=0)
+    sbt = np.amin(single_best)
+    # print(single_best)
+
     print("Oracle:", ot)
-    print("SB:", st)
+    print("SB:", sbt)
+    # print("Seq. Time:", st)
+    # np.savetxt("matrix.txt", runtime_matrix, fmt='%.2f')
+
