@@ -6,6 +6,7 @@ from argparse import ArgumentParser
 
 
 def cost(runtime_matrix, runtimes, permutation, cutoff):
+    # returns number of timeouts and total time taken by given schedule deefined by runtimes and permutation
     time = 0
     time_outs = len(runtime_matrix)
 
@@ -25,6 +26,8 @@ def cost(runtime_matrix, runtimes, permutation, cutoff):
 
 
 def find_min_timeouts(runtime_matrix, runtimes, permutation, steps, cutoff, number_of_permutations):
+    # this is implementation of walkSAT
+    # there are two loops, outer loop changes permutations and inner loop changes runtimes
     num_perms = number_of_permutations
     time, score = cost(runtime_matrix, runtimes, permutation, cutoff)
     # print("timeouts before opt:%s" % score)
@@ -50,6 +53,8 @@ def find_min_timeouts(runtime_matrix, runtimes, permutation, steps, cutoff, numb
 
 
 def swap(permutation, num_times):
+    # this function is used to find random permutations of schedule by swapping any two random indexes
+    # run this multiple times to find different permutations with large variance
     for i in range(num_times):
         first_index = random.randint(0, len(permutation) - 1)
         second_index = random.randint(0, len(permutation) - 1)
@@ -61,6 +66,8 @@ def swap(permutation, num_times):
 
 
 def change_time(runtimes, change, cutoff):
+    # this function randomly selects two inxes and change their times by increasing one value and decreasing other
+    # it also takes care of keeping runtimes within bounds
     first_index = random.randint(0, len(runtimes) - 1)
     second_index = random.randint(0, len(runtimes) - 1)
     # print
@@ -88,7 +95,7 @@ if __name__ == "__main__":
 
     parser = ArgumentParser()
     parser.add_argument("-a", "--algoruns", dest="scenario",
-                        default="SAT11-INDU", help="specify algorithm_runs.arff file")
+                        default="SAT11-RAND/algorithm_runs.arff", help="specify algorithm_runs.arff file")
     args, unknown = parser.parse_known_args()
 
     np.set_printoptions(formatter={"float": lambda x: "%0.0f" % x})
@@ -98,7 +105,7 @@ if __name__ == "__main__":
     scenario = args.scenario
     print("DataSet:%s" % scenario)
 
-    ar = os.path.join(scenario, "algorithm_runs.arff")
+    ar = args.scenario
     cv = os.path.join(scenario, "cv.arff")
     fv = os.path.join(scenario, "features_values.arff")
 
@@ -110,6 +117,7 @@ if __name__ == "__main__":
     number_of_permutations = 10
 
     num_algos = 0
+    # finding names of all algorithms
     algos = dict()
     for i, d in enumerate(data):
         # print("here:", i)
@@ -124,6 +132,7 @@ if __name__ == "__main__":
     # print(num_instances)
     runtime_matrix = np.zeros((num_instances, num_algos))
 
+    # creating runtime matrix as shown in lecture slides
     for i in range(num_instances):
         for j in range(num_algos):
             if data[i * num_algos + j][3] == cutoff:
@@ -131,40 +140,13 @@ if __name__ == "__main__":
             else:
                 runtime_matrix[i][j] = data[i * num_algos + j][3]
 
-    oracle_time = np.zeros(num_instances)
-    oracle_time = np.amin(runtime_matrix, axis=1)
-    ot = np.average(oracle_time)
-
-    seq_time = np.zeros(num_instances)
-    seq_time = np.amin(runtime_matrix, axis=1) * num_algos
-    np.clip(seq_time, 0, cutoff * 10, seq_time) # cutoff * 10
-    # print((seq_time == 50000).sum())
-    st = np.average(seq_time)
-
-    single_best = np.zeros(num_algos)
-    single_best = np.average(runtime_matrix, axis=0)
-    sbt = np.amin(single_best)
-    # print(single_best)
-
-    # print("Oracle:", ot)
-    # print("SB:", sbt)
-    # print("Seq. Time:", st)
-    # # np.savetxt("matrix.txt", runtime_matrix, fmt='%.2f')
-    # print("cutoff:%s*10" % cutoff)
-    # print("avg runtime:%s" % (cutoff/num_algos))
     runtimes = np.zeros(len(algos))
     runtimes.fill(cutoff/len(algos))
     permutation = np.arange(len(algos))
 
-    # print("\nruntime_matrix:\n%s" % runtime_matrix)
-    # print("initialize all runtimes to average:%s" % runtimes)
-
+    # calling a implementation of WalkSAT
     runtimes, permutation = find_min_timeouts(runtime_matrix, runtimes, permutation, steps, cutoff, number_of_permutations)
 
-    # print("\nResults:")
-    # print("algos:", algos)
-    # print("runtimes:%s" % (runtimes))
-    # print("permutation in numeric form:%s" % permutation)
     assignment = dict()
     perm = list()
     for i in range(num_algos):

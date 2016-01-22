@@ -8,7 +8,7 @@ if __name__ == "__main__":
     print("Ex6 Q1\nSyed Mohsin Ali\n")
     parser = ArgumentParser()
     parser.add_argument("-a", "--algoruns", dest="scenario",
-                        default="SAT11-RAND", help="specify algorithm_runs.arff file")
+                        default="SAT11-INDU/algorithm_runs.arff", help="specify algorithm_runs.arff file")
     args, unknown = parser.parse_known_args()
 
     np.set_printoptions(formatter={"float": lambda x: "%0.0f" % x})
@@ -18,10 +18,7 @@ if __name__ == "__main__":
     scenario = args.scenario
     print("DataSet:%s\n" % scenario)
 
-    ar = os.path.join(scenario, "algorithm_runs.arff")
-    cv = os.path.join(scenario, "cv.arff")
-    fv = os.path.join(scenario, "features_values.arff")
-
+    ar = args.scenario
     # print(ar, cv, fv)
     results = arff.load(open(ar, "rb"))
     data = results["data"]

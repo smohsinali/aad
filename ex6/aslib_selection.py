@@ -7,6 +7,7 @@ from argparse import ArgumentParser
 
 
 def cost(runtime_matrix, runtimes, permutation, cutoff):
+    # returns number of timeouts and total time taken by given schedule deefined by runtimes and permutation
     time = 0
     time_outs = len(runtime_matrix)
 
@@ -26,6 +27,8 @@ def cost(runtime_matrix, runtimes, permutation, cutoff):
 
 
 def find_min_timeouts(runtime_matrix, runtimes, permutation, steps, cutoff, number_of_permutations):
+    # this is implementation of walkSAT
+    # there are two loops, outer loop changes permutations and inner loop changes runtimes
     num_perms = number_of_permutations
     time, score = cost(runtime_matrix, runtimes, permutation, cutoff)
     # print("timeouts before opt:%s" % score)
@@ -50,6 +53,8 @@ def find_min_timeouts(runtime_matrix, runtimes, permutation, steps, cutoff, numb
 
 
 def swap(permutation, num_times):
+    # this function is used to find random permutations of schedule by swapping any two random indexes
+    # run this multiple times to find different permutations with large variance
     for i in range(num_times):
         first_index = random.randint(0, len(permutation) - 1)
         second_index = random.randint(0, len(permutation) - 1)
@@ -61,6 +66,8 @@ def swap(permutation, num_times):
 
 
 def change_time(runtimes, change, cutoff):
+    # this function randomly selects two inxes and change their times by increasing one value and decreasing other
+    # it also takes care of keeping runtimes within bounds
     first_index = random.randint(0, len(runtimes) - 1)
     second_index = random.randint(0, len(runtimes) - 1)
     # print
