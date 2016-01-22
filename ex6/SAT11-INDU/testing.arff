@@ -1,0 +1,27 @@
+@RELATION ALGORITHM_RUNS_SAT11-INDU
+
+@ATTRIBUTE instance_id STRING
+@ATTRIBUTE repetition NUMERIC
+@ATTRIBUTE algorithm STRING
+@ATTRIBUTE runtime NUMERIC
+@ATTRIBUTE runstatus {ok , timeout , memout , not_applicable , crash , other}
+
+@DATA
+./SAT11/application/rintanen/SATPlanning/blocks-blocks-36-0.180-SAT.cnf,1,RestartSAT_B95,1,ok
+./SAT11/application/rintanen/SATPlanning/blocks-blocks-36-0.180-SAT.cnf,1,glueminisat_2.2.5,10,ok
+./SAT11/application/rintanen/SATPlanning/blocks-blocks-36-0.180-SAT.cnf,1,SAT09referencesolverprecosat_236,3,ok
+./SAT07/industrial/jarvisalo/eq.atree.braun.12.unsat.cnf,1,RestartSAT_B95,5,timeout
+./SAT07/industrial/jarvisalo/eq.atree.braun.12.unsat.cnf,1,glueminisat_2.2.5,10,timeout
+./SAT07/industrial/jarvisalo/eq.atree.braun.12.unsat.cnf,1,SAT09referencesolverprecosat_236,2,timeout
+./SAT11/application/manthey/traffic/traffic_b_unsat.cnf,1,RestartSAT_B95,8,timeout
+./SAT11/application/manthey/traffic/traffic_b_unsat.cnf,1,RestartSAT_B95,1,ok
+./SAT11/application/manthey/traffic/traffic_b_unsat.cnf,1,glueminisat_2.2.5,10,ok
+./SAT11/application/fuhs/slp-synthesis-AES/slp-synthesis-aes-bottom19.cnf,1,RestartSAT_B95,10,ok
+./SAT11/application/fuhs/slp-synthesis-AES/slp-synthesis-aes-bottom19.cnf,1,RestartSAT_B95,10,timeout
+./SAT11/application/fuhs/slp-synthesis-AES/slp-synthesis-aes-bottom19.cnf,1,glueminisat_2.2.5,2,timeout
+./SAT11/application/jarvisalo/smtqfbv-aigs/smtlib-qfbv-aigs-bin_libsmbclient_vc1228502-tseitin.cnf,1,RestartSAT_B95,10,timeout
+./SAT11/application/jarvisalo/smtqfbv-aigs/smtlib-qfbv-aigs-bin_libsmbclient_vc1228502-tseitin.cnf,1,RestartSAT_B95,6,ok
+./SAT11/application/jarvisalo/smtqfbv-aigs/smtlib-qfbv-aigs-bin_libsmbclient_vc1228502-tseitin.cnf,1,glueminisat_2.2.5,10,ok
+./SAT11/application/fuhs/slp-synthesis-AES/slp-synthesis-aes-bottom18.cnf,1,RestartSAT_B95,10,ok
+./SAT11/application/fuhs/slp-synthesis-AES/slp-synthesis-aes-bottom18.cnf,1,RestartSAT_B95,8,timeout
+./SAT11/application/fuhs/slp-synthesis-AES/slp-synthesis-aes-bottom18.cnf,1,glueminisat_2.2.5,10,timeout
