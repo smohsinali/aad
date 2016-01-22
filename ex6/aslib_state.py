@@ -1,15 +1,26 @@
 import arff
 import os
 import numpy as np
+from argparse import ArgumentParser
+
 
 if __name__ == "__main__":
     print("Ex6 Q1\nSyed Mohsin Ali\n")
-    np.set_printoptions(formatter={"float": lambda x: "%0.5f" % x})
-    scenarios = ["SAT11-INDU", "SAT11-RANDU"]
-    set = 0
-    ar = os.path.join(scenarios[set], "algorithm_runs.arff")
-    cv = os.path.join(scenarios[set], "cv.arff")
-    fv = os.path.join(scenarios[set], "features_values.arff")
+    parser = ArgumentParser()
+    parser.add_argument("-a", "--algoruns", dest="scenario",
+                        default="SAT11-RAND", help="specify algorithm_runs.arff file")
+    args, unknown = parser.parse_known_args()
+
+    np.set_printoptions(formatter={"float": lambda x: "%0.0f" % x})
+    scenarios = ["SAT11-INDU", "SAT11-RAND"]
+    set = 1
+    # scenario = scenarios[set]
+    scenario = args.scenario
+    print("DataSet:%s\n" % scenario)
+
+    ar = os.path.join(scenario, "algorithm_runs.arff")
+    cv = os.path.join(scenario, "cv.arff")
+    fv = os.path.join(scenario, "features_values.arff")
 
     # print(ar, cv, fv)
     results = arff.load(open(ar, "rb"))
